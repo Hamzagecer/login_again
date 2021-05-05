@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #FBFCFC;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    position: relative;
+    width: 1100px;
+    height: 500px;
+    background: #F0F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.1px 4px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cut {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0.9;
+    background-image: linear-gradient(to right, #AB47BC, #CE93D8);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 0;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=password] {
+    width: 96%;
+    height: 30px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type=password] {
+    margin-top: 15px;
+}
+
+.mid {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.right img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+}
+
+.top {
+    margin-top: 70px;
+    width: 80%;
+}
+
+.top label {
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.top span {
+    color: #AB47BC;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button button {
+    width: 120px;
+    padding: 10px 13px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #AB47BC, #CE93D8);
+}
+
+.others {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.fa-facebook {
+    padding: 10px 30px;
+    background: #5DADE2;
+    color: #fff;
+    border-radius: 20px;
+    margin: 0 10px 0 20px;
+}
+
+.fa-twitter {
+    padding: 10px 30px;
+    background: #80DEEA;
+    color: #fff;
+    border-radius: 20px;
+}
